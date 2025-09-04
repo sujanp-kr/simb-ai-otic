@@ -1,6 +1,6 @@
 # Deterministic and/or Sigmoid?
 
-So, the transformer architecutre came with a limitation of not distinguishing input from context and hence prompt injection is still an un solved problem.
+So, the transformer architecutre came with a limitation of not distinguishing input from context and hence prompt injection is still an un solved problem. (see articles below).
 
 "Due to fundamental limitations of language models, one must assume that if an LLM is supplied with untrusted input, it will produce arbitrary output. When that input includes private information, one must also assume that the model will output private information." - Microsoft, 2023
 [https://arxiv.org/html/2501.07238v1]
@@ -96,3 +96,21 @@ flowchart TD
     class Context,UI,Data,ML,Control,Factors,Performance,Safety,Cost,FlexibilityCheck,AdaptabilityCheck,QualityCheck decision
     class PerformanceRec,SafetyRec,CostRec,FlexRec,SimpleRec,AdaptRec,StableRec,QualityRec,BasicRec recommendation
 ```
+
+
+### Prompt Injection controls.... WIP.
+
+Google best practices on prompt injection. Published June 2025, Compromised August 2025.
+https://security.googleblog.com/2025/06/mitigating-prompt-injection-attacks.html
+https://www.wired.com/story/google-gemini-calendar-invite-hijack-smart-home/
+
+
+Microsoft: How we defend against prompt injection. Published July 2025, Compromised August 2025 (Defcon)
+https://msrc.microsoft.com/blog/2025/07/how-microsoft-defends-against-indirect-prompt-injection-attacks/
+https://www.linkedin.com/posts/davidvillalonpardo_microsofts-copilot-studio-agents-got-hijacked-activity-7362084839275016194-Npqb/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAABGaAMBOyMVNZaS6bD-r_3AIMJ1YCkac1c
+
+
+
+Saleforce: How we defend against prompt injection. Published May 2025, Compromised August 2025 (Blackhat).
+https://www.salesforce.com/blog/prompt-injection-detection/
+https://www.cybersecuritydive.com/news/research-shows-ai-agents-are-highly-vulnerable-to-hijacking-attacks/757319/
