@@ -109,7 +109,7 @@ The cognitive core that provides reasoning, planning, and natural language under
 - Generate multiple solution approaches and evaluate their merits
 - Perform semantic operations on information, understanding meaning rather than just manipulating syntax
 - Learn from examples and apply patterns to new situations
-NOTE: There are newer attempts to use SLMs (Small or Specialized Language Models) to minimize the bloat in the architecture related to cost and performance. (check NVIDIA's paper on SLMs; or perhaps even other non-transoformer based models like MAMBA).
+** **NOTE:** There are newer attempts to use SLMs (Small or Specialized Language Models) to minimize the bloat in the architecture related to cost and performance. (check NVIDIA's paper on SLMs; or perhaps even other non-transoformer based models like MAMBA).
 
 **Agent Framework**
 The structural foundation that defines roles, responsibilities, and capabilities - similar to how an operating system manages processes, but with intelligence. This framework:
