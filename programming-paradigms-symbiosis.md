@@ -1,9 +1,31 @@
 # Understanding Agentic Programming: A New Computational Paradigm
 ### - Sujan Pakala, Engineer.
 
+## Preface
+This guide is for traditional software developers navigating the transition to a world where agentic AI workflows and/or at least an orchstration layer are more required. In other words, those who built their expertise on deterministic systems and now face the challenge of integrating probabilistic, AI-driven workflows into their practice may find worth in reading through this.
+
+My relationship with artificial intelligence began gradually. As a software engineer from ~2009 onwards, and a PhD candidate from 2010 to 2018, I maintained what I'd call a "casual observer" stance toward the AI/ML landscape—incorporating BERT into semantic analysis projects, experimenting with AlexNet for computer vision work, all within the comfortable boundaries of academia and side projects. I also deployed a few smaller, one-shot AI/ML features in production applications, such as identity resolution systems, where machine learning quietly solved specific problems without fanfare. The field felt specialized, contained, predictable.
+Then November 2022 arrived, and ChatGPT fundamentally altered the conversation.
+
+What followed was remarkable not just for the technology itself, but for the velocity of institutional response. NVIDIA's stock trajectory became a proxy for AI adoption^^. Companies across every sector rushed to integrate "AI-powered" into their product descriptions. OpenAI's pivot toward commercialization—accompanied by promises of dramatic cost reductions in human capital while somehow preserving their founding mission of benefiting all humanity—accelerated an industry-wide reckoning. The imperative became clear: adapt or risk obsolescence.
+
+*(^^ As of Nov 12 2025, trend seems to be shifting from hardware to more software - since Softbank did a sector rotation with their investments dumping over 5B from Nvidia but investing over $50B into OpenAI before its anticipated first ever trillionaire IPO. Why it calls itself "Open"AI event today is still a mystery, but thats a story for perhaps another time)*
+
+
+This pressure cascaded inevitably to individual developers. The new mantra emerged quickly: embrace AI tools or be replaced by those who do. While many questions about this transformation warranted deeper investigation, I found myself in a familiar position—focused on maintaining professional relevance and meeting my responsibilities. So I learned. Voraciously. MIT's CS50 course on AI and Machine Learning. Andrew Ng's lectures and frameworks. Countless papers, talks, and experiments with RAG systems.
+
+Through this immersion, I tracked a clear evolutionary arc: from transformer architectures to large language models, from generative AI to sophisticated agentic workflows. More significantly, I began to recognize a fundamental paradigm shift—one that demands reconciliation between the deterministic foundations of traditional software engineering and the inherently probabilistic, non-deterministic nature of agentic AI systems.
+
+I am, at my core, a synthesist. I believe the most powerful solutions emerge not from choosing sides but from understanding how to leverage the strengths of both approaches. This work grows from that conviction. It's written for developers standing at this inflection point—those who built their careers on predictable, testable, deterministic systems and now must integrate tools that operate on probability, emergence, and approximation.
+
+This is not a manifesto advocating the replacement of one paradigm with another. Rather, it's a practical guide for the symbiosis between traditional development practices and agentic AI workflows — understanding their differences, respecting their individual strengths, and charting a thoughtful path forward.
+
+### A Note on Process: 
+This work was blueprinted and drafted by me, then refined and expanded by an LLM (not ChatGPT), corrected and iterated by me numerous times, and finally enhanced through one round of feedback from my coworkers for accuracy and general clarity — all of which has been duly incorporated. In keeping with the spirit of this guide, the creation process itself embodies the Human-AI collaboration it advocates.
+
 ## 1. Introduction
 
-Agentic programming represents a complementary computational paradigm that works symbiotically with traditional programming approaches. Rather than simply being "LLMs with tools," agentic architectures introduce autonomous reasoning, goal-directed behavior, and emergent problem-solving capabilities that enhance and extend our existing programming toolkit.
+Agentic programming represents a fundamental shift in how we design and execute computational systems - a new paradigm that works symbiotically with traditional programming approaches. Rather than simply being "LLMs with tools," agentic architectures introduce autonomous reasoning, goal-directed behavior, and emergent problem-solving capabilities that enhance and extend our existing programming toolkit.
 
 This paradigm doesn't replace traditional programming models but creates a collaborative layer where computation becomes context-aware, adaptive, and reasoning-driven. Think of it as the difference between a kitchen with only basic appliances (traditional programming) versus one that also includes an intelligent sous chef (agentic systems) who can handle creative tasks, adapt recipes, and coordinate complex meals while the precision tools continue to handle the exact measurements and timing.
 
@@ -35,7 +57,7 @@ The most powerful systems of the future will thoughtfully combine both paradigms
 
 For traditional programmers, these characteristics feel natural and are often exactly what's needed. However, they can become constraining when dealing with:
 
-**Ambiguous or evolving requirements:** Traditional systems require precise specifications upfront. When requirements are unclear, change frequently, or emerge through exploration, the rigid structure that makes traditional systems reliable can slow adaptation.
+**Ambiguous or evolving requirements:** Traditional systems require precise specifications upfront. When requirements are unclear, change frequently, or emerge through exploration, the rigid structure that makes traditional systems reliable can slow adaptation. Agile manifesto and any one of its frameworks (scrum, kanban, ... ) help keep up an iterative development process with end user's feedback sought at quick intervals - hence mitigating the evolutionary nature of software products.
 
 **Novel or creative problem-solving:** Traditional programming excels at implementing known solutions efficiently. When problems require creative approaches, exploring solution spaces, or combining knowledge in unexpected ways, the predetermined nature of traditional systems can be limiting.
 
@@ -87,6 +109,7 @@ The cognitive core that provides reasoning, planning, and natural language under
 - Generate multiple solution approaches and evaluate their merits
 - Perform semantic operations on information, understanding meaning rather than just manipulating syntax
 - Learn from examples and apply patterns to new situations
+NOTE: There are newer attempts to use SLMs (Small or Specialized Language Models) to minimize the bloat in the architecture related to cost and performance. (check NVIDIA's paper on SLMs; or perhaps even other non-transoformer based models like MAMBA).
 
 **Agent Framework**
 The structural foundation that defines roles, responsibilities, and capabilities - similar to how an operating system manages processes, but with intelligence. This framework:
@@ -525,6 +548,9 @@ More sophisticated agentic behaviors often come with reduced interpretability. T
 
 **Current State-of-the-art Boundaries:**
 Present agentic systems excel at language tasks and symbolic reasoning but struggle with tasks requiring precise numerical computation, real-time performance, or integration with complex existing systems. Understanding these boundaries is crucial for appropriate system design.
+
+**Resource insensitivity:**
+Current GPUs based Compute systems are requiring the data centers hosting them to consume unconscionable amounts of power and water. Until they may be displaced by more cool-by-default systems like quantum or light based processors, humanity and ecology will be inadvertently giving up their share of natural resources, to keep the AIs powered up and cooled.
 
 ### 11.2 Open Research Questions
 
