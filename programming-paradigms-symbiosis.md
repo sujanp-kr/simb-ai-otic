@@ -480,6 +480,9 @@ For each component or capability in your system, ask:
 
 The goal isn't to choose one paradigm over another, but to use each where it provides the most value while ensuring they work together effectively.
 
+A decision tree to add with such strategy is available at my other .md article about "Deterministic Vs Sigmoid".
+
+
 ## 10. Future Implications and Considerations
 
 ### 10.1 Development Process Evolution
